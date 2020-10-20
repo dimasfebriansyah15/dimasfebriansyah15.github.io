@@ -1,0 +1,17 @@
+<?php
+    session_start();
+    unset($_SESSION['IdUser']);
+    unset($_SESSION['NamaUser']);
+    unset($_SESSION['NamaDepan']);
+    unset($_SESSION['NamaBelakang']);
+    unset($_SESSION['PasswordUser']);
+    unset($_SESSION['FotoUser']);
+    unset($_SESSION['Email']);
+    unset($_SESSION['Password']);
+    unset($_SESSION['IdGroup']);
+    unset($_SESSION['NamaGroup']);
+    unset($_SESSION['NamaKomputer']);
+    unset($_SESSION['aktif']);
+    session_destroy();
+    header('location:home');
+?>
